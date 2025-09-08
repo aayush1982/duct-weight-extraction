@@ -206,7 +206,7 @@ uploaded_files = st.file_uploader(
     type=["xlsx"],
     accept_multiple_files=True
 )
-Duct-wise weight extraction
+
 if not uploaded_files:
     st.info("Please upload at least one .xlsx file to proceed.")
     st.stop()
