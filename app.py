@@ -194,7 +194,7 @@ def build_master_sheet(df: pd.DataFrame) -> pd.DataFrame:
     return out
 
 # ------------------------ UI ------------------------------
-st.title("Duct-wise weight extraction")
+st.title("")
 st.caption("Upload one or more Excel files (.xlsx). We’ll generate: 1) Duct-wise Summary, 2) Master Sheet.")
 
 if st.sidebar.button("🔄 Clear cache"):
@@ -206,7 +206,7 @@ uploaded_files = st.file_uploader(
     type=["xlsx"],
     accept_multiple_files=True
 )
-
+Duct-wise weight extraction
 if not uploaded_files:
     st.info("Please upload at least one .xlsx file to proceed.")
     st.stop()
